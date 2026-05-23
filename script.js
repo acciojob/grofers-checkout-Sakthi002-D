@@ -11,8 +11,8 @@ const getSum = () => {
 		total += parseFloat(price.textContent);
 	});
 
-	const newRow = document.createElement("td");
-	const newCell = document.createElement("tr");
+	const newRow = document.createElement("tr");
+	const newCell = document.createElement("td");
 
 	newCell.textContent = total;
 	newCell.colSpan = 2;
