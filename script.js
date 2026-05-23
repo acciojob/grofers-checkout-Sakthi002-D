@@ -17,6 +17,8 @@ const getSum = () => {
 	newCell.textContent = total;
 	newCell.colSpan = 2;
 
+	 newCell.id = "ans";  
+
 	newRow.appendChild(newCell);
 	document.querySelector("table").appendChild(newRow);
 };
