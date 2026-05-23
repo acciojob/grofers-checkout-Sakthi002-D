@@ -4,15 +4,15 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 //Add your code here
-  const price = document.querySeletorAll(".price");
+  const price = document.querySelectorAll(".prices");
 
 	let total = 0;
-	price,forEach((price) {
-		total += parseFloat(price.tectContent);
+	price.forEach((price)  => {
+		total += parseFloat(price.textContent);
 	});
 
-	const newCell = document.createElement("tr");
 	const newRow = document.createElement("td");
+	const newCell = document.createElement("tr");
 
 	newCell.textContent = total;
 	newCell.colSpan = 2;
